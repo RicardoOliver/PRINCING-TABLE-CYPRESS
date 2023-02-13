@@ -1,0 +1,497 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: none;
+}
+
+body {
+    background: #DBDBDB;
+    font-family: 'Open sans';
+    width: 100%;
+    height: 100%;
+}
+
+
+.form_wrap {
+    min-height: 100vh;
+    margin: 0px auto;
+    display: flex;
+
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.cantact_info::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    opacity: 0.9;
+}
+
+.cantact_info {
+    width: 38%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../fondo.jpg');
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.info_title,
+.info_items {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.info_title {
+    margin-bottom: 60px;
+}
+
+.info_title span {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info_title h2 {
+    line-height: 2.92826vw;
+    font-size: 2.63543vw;
+    letter-spacing: -.07321vw;
+}
+
+.info_items p {
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info_items p:nth-child(1) span {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.info_items p:nth-child(2) span {
+    font-size: 50px;
+    margin-right: 15px;
+    margin-left: 4px;
+}
+
+
+
+form.form_contact {
+    width: 62%;
+    padding: 30px 40px;
+}
+
+form.form_contact h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+form.form_contact .user_info {
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contact label {
+    font-weight: 600;
+}
+
+form.form_contact input,
+form.form_contact textarea {
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
+    font-family: 'Open sans';
+    color: #5a5a5a;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form.form_contact textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contact input[type="button"] {
+    width: 180px;
+    background: 050e46;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+
+    align-self: flex-end;
+
+    color: #000000;
+    font-family: 'Open sans';
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form.form_contact input[type="button"]:hover {
+    background: #3371B6;
+}
+
+
+.modal_wrap {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensagem_modal {
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensagem_modal h3 {
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mensagem_modal h3:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #000000;
+    margin: 10px 0px 15px;
+}
+
+.mensagem_modal p {
+    font-size: 16px;
+    color: #000000;
+}
+
+.mensagem_modal p:before {
+    content: "\f00d";
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #050e46;
+    margin-right: 8px;
+}
+
+#btnClose {
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 10px;
+
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #050e46;
+    cursor: pointer;
+
+    float: right;
+}
+
+
+
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    background: url(https://i.imgur.com/2ZgHKbQ.jpg) center no-repeat;
+    background-size: cover;
+    
+}
+
+.blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+a.btn {
+    width: 150px;
+    display: block;
+    margin: -25px 0 0 -75px;
+    padding: 1em 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font: 1.125em 'Arial', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    background: rgba(217, 67, 86, 1);
+}
+
+.modal-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    
+}
+
+.modal-wrapper.open {
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+
+.modal-wrapper.open .modal {
+    margin-top: -200px;
+    opacity: 1;
+}
+
+.head {
+    width: 90%;
+    height: 32px;
+    padding: 1.5em 5%;
+    overflow: hidden;
+
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content {
+    padding: 5%;
+}
+
+.no-scroll-y {
+	overflow-y: hidden;
+}
+
+/* Preloader */
+.ctn-preloader {
+	align-items: center;
+  cursor: none;
+	display: flex;
+  height: 100%;
+  justify-content: center;
+	position: fixed;
+	left: 0;
+  top: 0;
+	width: 100%;
+  z-index: 900;
+}
+
+.ctn-preloader .animation-preloader {
+	position: absolute;
+  z-index: 100;
+}
+
+/* Spinner cargando */
+.ctn-preloader .animation-preloader .spinner {
+  animation: spinner 1s infinite linear;
+	border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #000000; /* No se identa por orden alfabetico para que no lo sobre-escriba */
+  height: 9em;
+  margin: 0 auto 3.5em auto;
+  width: 9em;
+}
+
+/* Texto cargando */
+.ctn-preloader .animation-preloader .txt-loading {
+  font: bold 5em 'Montserrat', sans-serif;
+	text-align: center;
+	user-select: none;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
+  animation: letters-loading 4s infinite;
+  color: #000000;
+  content: attr(data-text-preloader);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: rotateY(-90deg);
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading {
+	color: rgba(0, 0, 0, 0.2);
+	position: relative;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
+  animation-delay: 0.2s;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(3):before {
+  animation-delay: 0.4s;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(4):before {
+  animation-delay: 0.6s;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(5):before {
+  animation-delay: 0.8s;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(6):before {
+  animation-delay: 1s;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
+  animation-delay: 1.2s;
+}
+
+.ctn-preloader .loader-section {
+  background-color: #ffffff;
+  height: 100%;
+	position: fixed;
+  top: 0;
+  width: calc(50% + 1px);
+}
+
+.ctn-preloader .loader-section.section-left {
+  left: 0;
+}
+
+.ctn-preloader .loader-section.section-right {
+  right: 0;
+}
+
+/* Efecto de fade en la animación de cargando */
+.loaded .animation-preloader {
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+/* Efecto de cortina */
+.loaded .loader-section.section-left {
+  transform: translateX(-101%);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
+}
+
+.loaded .loader-section.section-right {
+  transform: translateX(101%);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
+}
+
+/* Animación del preloader */
+@keyframes spinner {
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+/* Animación de las letras cargando del preloader */
+@keyframes letters-loading {
+  0%,
+  75%,
+  100% {
+  	opacity: 0;
+    transform: rotateY(-90deg);
+  }
+
+  25%,
+  50% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+/* Tamaño de portatil hacia atras (portatil, tablet, celular) */
+@media screen and (max-width: 767px) {
+	/* Preloader */
+	/* Spinner cargando */	
+	.ctn-preloader .animation-preloader .spinner {
+		height: 8em;
+		width: 8em;
+	}
+
+	/* Texto cargando */
+	.ctn-preloader .animation-preloader .txt-loading {
+	  font: bold 3.5em 'Montserrat', sans-serif;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	/* Prelaoder */
+	/* Spinner cargando */
+	.ctn-preloader .animation-preloader .spinner {
+		height: 7em;
+		width: 7em;
+	}
+
+	/* Texto cargando */
+	.ctn-preloader .animation-preloader .txt-loading {
+	  font: bold 2em 'Montserrat', sans-serif;
+	}
+}
+

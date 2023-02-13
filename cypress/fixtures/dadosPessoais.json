@@ -1,0 +1,40 @@
+[
+    {
+        "nome": "Maria",
+        "sobrenome": "tereza",
+        "empresa": "negocios certo",
+        "endereco": "Av. Paulista",
+        "numero": "2000",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "05622114",
+        "telefone": "1199999999999",
+        "email": "teste@mail.com"
+    }, {
+        "nome": "Ricardo",
+        "sobrenome": "Oliveira",
+        "empresa": "futuro",
+        "endereco": "Av. Paulista",
+        "numero": "658",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "55641520",
+        "telefone": "1199999999999",
+        "email": "teste@mail.com"
+    }, {
+        "nome": "Katia",
+        "sobrenome": "Maria",
+        "empresa": "presente",
+        "endereco": "Av. Paulista",
+        "numero": "2000",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "010000100",
+        "telefone": "1199999999999",
+        "email": "teste@mail.com"
+    }
+
+]

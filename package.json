@@ -1,0 +1,35 @@
+{
+  
+  "name": "princing-table-cypress",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open"
+},
+ "standard": {
+    "globals": [
+      "beforeEach",
+      "context",
+      "cy",
+      "Cypress",
+      "describe",
+      "it"
+    ]
+  },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoOliver/Princing-Table.git"
+  },
+  "keywords": [
+    "cypress",
+    "cypress.io",
+    "testing"
+  ],
+  "author": "Ricardo Oliver",
+  "license": "MIT",
+  "description": "Developed a price table  with the  utilization the Html, javaScript end css and too automated  the site created with cypress.io",
+  "devDependencies": {
+    "cypress": "^12.5.1"
+  }
+}

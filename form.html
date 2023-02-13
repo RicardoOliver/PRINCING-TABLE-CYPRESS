@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contato</title>
+    <link rel="stylesheet" href="./css/form.css">
+
+</head>
+
+<body>
+    <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>Duvida?</h2>
+                <h2>Entre em contato:</h2>
+             </section>
+            <section class="info_items">
+                <p>
+                    <span class="fa fa-envelope"></span>
+                    r.c.d.1985@hotmail.com
+                </p>
+                <p>
+                    <span class="fa fa-mobile"></span>
+                    +55(11) 9 6547-8204
+                </p>
+            </section>
+        </section>
+
+        <form action="" class="form_contact">
+            <h2>Enviar uma Mensagem</h2>
+            <div class="user_info">
+                <label for="names">Nome *</label>
+                <input type="text" id="names">
+
+                <label for="phone">Telefone / Celular</label>
+                <input type="text" id="phone">
+
+                <label for="email">Email *</label>
+                <input type="text" id="email">
+
+                <label for="mensagem">Mensagem *</label>
+                <textarea id="mensagem"></textarea>
+
+                <input type="button" value="Enviar Mensagem" id="btnSend">
+                <div class="page-wrapper">
+                </div>
+                <div class="modal-wrapper">
+                    <div class="modal">
+                        <div class="head">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <!-- Preloader -->
+                                <section>
+                                    <div id="preloader">
+                                        <div id="ctn-preloader" class="ctn-preloader">
+                                            <div class="animation-preloader">
+                                                <div class="spinner"></div>
+                                                <div class="txt-loading">
+                                                    <span data-text-preloader="S" class="letters-loading">
+                                                        S
+                                                    </span>
+
+                                                    <span data-text-preloader="U" class="letters-loading">
+                                                        U
+                                                    </span>
+
+                                                    <span data-text-preloader="C" class="letters-loading">
+                                                        C
+                                                    </span>
+
+                                                    <span data-text-preloader="E" class="letters-loading">
+                                                        E
+                                                    </span>
+
+                                                    <span data-text-preloader="S" class="letters-loading">
+                                                        S
+                                                    </span>
+
+                                                    <span data-text-preloader="S" class="letters-loading">
+                                                        S
+                                                    </span>
+
+                                                    <span data-text-preloader="O" class="letters-loading">
+                                                        O
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="loader-section section-left"></div>
+                                            <div class="loader-section section-right"></div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="content">
+                        </div>
+                    </div>
+                </div>
+
+        </form>
+
+    </section>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
