@@ -9,6 +9,7 @@ module.exports = defineConfig({
     mobile: {
       viewportWidth: 768, 
       viewportHeight: 812,
+      projectId: "zngdff",
     },
     
     setupNodeEvents(on, config) {
