@@ -1,5 +1,6 @@
 ///<reference types="cypress"/>
 
+
 describe('Princing Table basic', () => {
     beforeEach(() => {
         cy.visit('/PRINCING-TABLE-CYPRESS/index.html');

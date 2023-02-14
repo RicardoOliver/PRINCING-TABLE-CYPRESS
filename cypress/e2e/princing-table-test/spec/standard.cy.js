@@ -30,8 +30,10 @@ describe('Princing Table standard', () => {
         cy.get('#mensagem')
             .should('be.visible')
             .type('Gostaria de saber mais sobre os planos da empresa')
-            cy.get('#btnSend').click()
+        cy.get('#btnSend').click()
             .should('be.visible')
             .click()
+            cy.wait(2000)
     });
+
 });
