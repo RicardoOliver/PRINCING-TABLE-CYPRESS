@@ -310,7 +310,7 @@ a.btn {
 
 }
 
-/* The Close Button */
+
 .close {
     color: #aaa;
     float: right;
@@ -333,7 +333,7 @@ a.btn {
 	overflow-y: hidden;
 }
 
-/* Preloader */
+
 .ctn-preloader {
 	align-items: center;
   cursor: none;
@@ -352,7 +352,7 @@ a.btn {
   z-index: 100;
 }
 
-/* Spinner cargando */
+
 .ctn-preloader .animation-preloader .spinner {
   animation: spinner 1s infinite linear;
 	border-radius: 50%;
@@ -363,7 +363,7 @@ a.btn {
   width: 9em;
 }
 
-/* Texto cargando */
+
 .ctn-preloader .animation-preloader .txt-loading {
   font: bold 5em 'Montserrat', sans-serif;
 	text-align: center;
@@ -426,13 +426,13 @@ a.btn {
   right: 0;
 }
 
-/* Efecto de fade en la animación de cargando */
+
 .loaded .animation-preloader {
   opacity: 0;
   transition: 0.3s ease-out;
 }
 
-/* Efecto de cortina */
+
 .loaded .loader-section.section-left {
   transform: translateX(-101%);
   transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
@@ -443,14 +443,14 @@ a.btn {
   transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
 }
 
-/* Animación del preloader */
+
 @keyframes spinner {
 	to {
 		transform: rotateZ(360deg);
 	}
 }
 
-/* Animación de las letras cargando del preloader */
+
 @keyframes letters-loading {
   0%,
   75%,
@@ -466,30 +466,28 @@ a.btn {
   }
 }
 
-/* Tamaño de portatil hacia atras (portatil, tablet, celular) */
+
 @media screen and (max-width: 767px) {
-	/* Preloader */
-	/* Spinner cargando */	
+	
 	.ctn-preloader .animation-preloader .spinner {
 		height: 8em;
 		width: 8em;
 	}
 
-	/* Texto cargando */
+	
 	.ctn-preloader .animation-preloader .txt-loading {
 	  font: bold 3.5em 'Montserrat', sans-serif;
 	}
 }
 
 @media screen and (max-width: 500px) {
-	/* Prelaoder */
-	/* Spinner cargando */
+	
 	.ctn-preloader .animation-preloader .spinner {
 		height: 7em;
 		width: 7em;
 	}
 
-	/* Texto cargando */
+	
 	.ctn-preloader .animation-preloader .txt-loading {
 	  font: bold 2em 'Montserrat', sans-serif;
 	}
