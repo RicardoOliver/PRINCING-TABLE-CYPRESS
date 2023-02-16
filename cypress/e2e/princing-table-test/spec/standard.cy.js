@@ -2,7 +2,7 @@
 
 describe('Princing Table standard', () => {
     beforeEach(() => {
-        cy.visit('/PRINCING-TABLE-CYPRESS/index.html');
+        cy.visit('/PRINCING-TABLE-CYPRESS/');
     });
 
 
