@@ -3,7 +3,7 @@
 
 describe('Princing Table basic', () => {
     beforeEach(() => {
-        cy.visit('/PRINCING-TABLE-CYPRESS/index.html');
+        cy.visit('/PRINCING-TABLE-CYPRESS/');
     });
 
     it('Validar card basic', () => {
