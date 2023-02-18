@@ -21,3 +21,5 @@ Antes de começar, garanta que os seguintes sistemas estejam instalados em seu c
 > **Obs. 2:** Ao instalar o Node.js o npm é instalado junto. 
 >
 > **Obs. 3:** Para verificar as versões do git, Node.js e npm instaladas em seu computador, execute o comando `git --version && node --version && npm --version` no seu terminal de linha de comando.
+
+![Pipeline Status](https://github.com/RicardoOliver/PRINCING-TABLE-CYPRESS/actions/workflows/cypress.yml/badge.svg)
