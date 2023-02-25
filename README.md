@@ -11,7 +11,7 @@ Em seguida, utilizei o Cypress para automatizar alguns testes na página. Testei
 
 Antes de começar, garanta que os seguintes sistemas estejam instalados em seu computador.
 
-- [git](https://git-scm.com/) (estou usando a versão `2.39.1` enquanto escrevo esta aula)
+- [git](https://git-scm.com/) (estou usando a versão `2.39.1`)
 - [Node.js](https://nodejs.org/en/) (estou usando a versão `v18.14.0`)
 - npm (estou usando a versão `8.19.2`)
 - [Visual Studio Code](https://code.visualstudio.com/) (estou usando a versão `1.75.1`)
